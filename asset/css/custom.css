@@ -1,0 +1,604 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+/* CSS Document */
+
+
+/* General */
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #020916;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.img-center {
+	margin: 0 auto;
+}
+
+.navbar-default {
+	margin-bottom: 0;
+	background: none;
+	box-shadow: none;
+	border: 0;
+}
+
+.main-slider .item>img {
+	width: 100%;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+
+/*Header Css Start*/
+
+.container {
+	position: relative;
+}
+
+
+/* Header */
+
+header {
+	background: transparent;
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	background: transparent;
+	padding: 20px 0;
+	background: linear-gradient(rgba(0, 0, 0, .9) 1%, rgba(0, 0, 0, .8) 15%, rgba(0, 0, 0, .7) 30%, rgba(0, 0, 0, .6) 45%, rgba(0, 0, 0, .5) 60%, rgba(0, 0, 0, .3) 75%, transparent);
+}
+
+
+/* Menu */
+
+header .menu {
+	float: right;
+	list-style: none;
+	margin-top: 5px;
+}
+
+header .menu>li {
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+header .menu a {
+	color: #fff;
+	font-weight: 600;
+	font-size: 1rem;
+	letter-spacing: .5px;
+}
+
+
+/* Seach Sec CSS STARTS */
+
+.search-sec .search-input {
+	box-shadow: 2px 5px 10px rgb(0 0 0 / 40%);
+	background: rgba(49, 49, 51, .38);
+	padding: 0 45px;
+	color: #FFF;
+	font-weight: 500;
+	font-size: 22px;
+	width: 100%;
+	border-radius: 30px;
+	height: 63px;
+	border-bottom: navajowhite;
+	box-shadow: none;
+	border-top: navajowhite;
+	border-left: navajowhite;
+	border-right: navajowhite;
+}
+
+.search-sec div#results {
+	padding: 25px 0;
+}
+
+.search-sec #result-list {
+	box-shadow: 2px 5px 10px rgb(0 0 0 / 40%);
+	background: rgba(49, 49, 51, .38);
+	position: relative;
+	top: 25px;
+	border-radius: 24PX;
+}
+
+.search-sec .description a {
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.search-sec #result-footer {
+	border-top: 2px solid #707070;
+}
+
+.search-sec #result-footer a {
+	display: inline-block;
+	padding: 13px 40px;
+	font-size: 15px;
+	color: #fff;
+	background: #ff501a;
+	border: 1px solid;
+	border-color: #ff501a;
+	transition: all .2s cubic-bezier(.75, 0, .28, 1);
+	border-radius: 2px;
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.search-sec #result-footer a:hover {
+	border: 1px solid #000;
+}
+
+.search-sec #result-list:after,
+#result-list:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.search-sec #result-list:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: rgba(21, 31, 46, 0.71);
+	border-width: 19px;
+	left: 20%;
+	margin-left: -19px;
+}
+
+.search-sec #result-list:before {
+	border-color: rgba(113, 158, 206, 0);
+	border-bottom-color: rgba(21, 31, 46, 0.71);
+	border-width: 20px;
+	left: 20%;
+	margin-left: -20px;
+}
+
+.search-sec .list-header {
+	border-bottom: 1px solid #ff501a;
+	color: #ff501a;
+}
+
+.search-sec .rating-div {
+	color: #ff501a;
+}
+
+.search-sec .lang-text {
+	color: #FFF;
+	font-size: 14px;
+}
+
+.search-sec .movie-title {
+	font-size: 20px;
+	color: #FFF;
+	font-weight: 600;
+}
+
+.search-sec .description {
+	color: #EEEEEE;
+	font-size: 14px;
+}
+
+:focus-visible {
+	outline: none;
+}
+
+
+/* Seach Sec CSS ENDS */
+
+
+/* Popular Sec CSS Starts */
+
+.popular-sec .wrapper {
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.popular-sec h2 {
+	font-family: sans-serif;
+	color: #fff;
+	font-size: 2.2em;
+}
+
+.popular-sec .carousel {
+	width: 90%;
+	margin: 0px auto;
+}
+
+.popular-sec .slick-slide {
+	margin: 10px;
+}
+
+.popular-sec .slick-slide img {
+	width: 100%;
+}
+
+.popular-sec .slick-prev,
+.slick-next {
+	background: #000;
+	border-radius: 15px;
+	border-color: transparent;
+}
+
+.popular-sec .card {
+	border-color: none;
+	border: none;
+	background-color: transparent;
+}
+
+.popular-sec .card-body {
+	background: #fff;
+	width: 100%;
+	vertical-align: top;
+	border: 0;
+}
+
+.popular-sec .card-content {
+	text-align: left;
+	color: #333;
+	padding: 15px;
+}
+
+.popular-sec .card-text {
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.popular-sec .card-header {
+	padding: 0;
+	border-bottom: 0;
+}
+
+.popular-sec .slick-next {
+	right: 56px;
+	top: -29px;
+}
+
+.popular-sec .slick-prev {
+	left: auto;
+	right: 88px;
+	top: -29px;
+}
+
+
+/* Popular Sec CSS Ends */
+
+
+/* Banner Sec CSS Starts */
+
+.banner-sec {
+	position: relative;
+}
+
+.banner-sec .content {
+	position: absolute;
+	top: 45%;
+	transform: translateY(-50%);
+	left: 0;
+	right: 0;
+	color: #fff;
+	width: 70%;
+	margin: auto;
+}
+
+.banner-sec h1 {
+	font-size: 5em;
+	font-weight: 700;
+	text-shadow: 2px 1px 24px rgb(255 255 255 / 77%);
+	letter-spacing: 1px;
+	line-height: 73px;
+	margin-bottom: 20px;
+}
+
+.banner-sec h1:hover {
+	color: #ff501a;
+}
+
+.banner-sec p {
+	text-shadow: 1px 3px 5px rgb(0 0 0 / 35%);
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 400;
+}
+
+
+/* Banner Sec CSS Ends */
+
+
+/* Overlay CSS */
+
+.visuallyhidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.input,
+.button {
+	display: inline-block;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	line-height: normal;
+	border: none;
+	outline: none;
+	max-width: 100%;
+}
+
+.fill-currentcolor {
+	fill: currentcolor;
+}
+
+.fill-none {
+	fill: none;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	transition: .3s ease-out;
+}
+
+.search-res button {
+	display: inline-block;
+	padding: 13px 40px;
+	font-size: 15px;
+	color: #fff;
+	background: #ff501a;
+	border: 1px solid;
+	border-color: #ff501a;
+	transition: all .2s cubic-bezier(.75, 0, .28, 1);
+	border-radius: 2px;
+	box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.button {
+	cursor: pointer;
+	color: #ff501a;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.button:hover,
+.button:focus {
+	transform: scale(1.125);
+}
+
+.button:hover .icon,
+.button:focus .icon {
+	transform: scale(1.25);
+}
+
+.button-open {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+.button-close {
+	position: absolute;
+	top: 6.5vw;
+	right: 7.5vw;
+	padding: 0;
+	z-index: 1;
+	background-color: transparent;
+}
+
+.button-search {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 25px 16px 21px;
+}
+
+@media (min-width: 768px) {
+	.button-search {
+		padding: 30px 48px;
+	}
+}
+
+.form-search {
+	position: relative;
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.form-search {
+		max-width: 720px;
+	}
+}
+
+.input-search {
+	padding: 26px 16px 25px;
+	width: 100%;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ff501a;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(187, 216, 216, 0.6), 0 3px 3px rgba(187, 216, 216, 0.4), 0 8px 16px rgba(187, 216, 216, 0.3);
+}
+
+@media (min-width: 768px) {
+	.input-search {
+		padding: 29px 48px;
+		font-size: 32px;
+		border-radius: 30em;
+	}
+}
+
+.input-search::placeholder {
+	color: #C3D8D7;
+}
+
+.overlay {
+	overflow: hidden;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #000, #020916);
+}
+
+@media (min-width: 768px) {
+	.overlay {
+		align-items: center;
+		align-content: center;
+	}
+}
+
+.hiding {
+	max-height: 0;
+	opacity: 0;
+	bottom: 0;
+	transition: max-height 0.3s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.6s ease-out;
+}
+
+.hiding .button-search,
+.hiding .input-search {
+	opacity: 0;
+}
+
+.hiding .button-search {
+	transform: translate3d(0, 33%, 0);
+}
+
+.hiding .input-search {
+	transform: translate3d(0, 50%, 0);
+}
+
+.showing {
+	height: 100%;
+	overflow-y: auto;
+	top: 0;
+	transition: max-height 0.4s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.8s ease-out;
+}
+
+.button-search {
+	transition: .4s .6s ease-out;
+}
+
+.input-search {
+	transition: .8s .3s ease-out;
+}
+
+.icon-search {
+	position: relative;
+	top: -45px;
+	right: -16px;
+}
+
+
+/* Overlay CSS */
+
+
+/* Footer Css Starts */
+
+footer {
+	background: #202026;
+	width: 100%;
+	padding: 20px 0;
+	color: #666;
+	position: relative;
+	border-top: 1px solid #36363c;
+}
+
+footer p {
+	color: #707c86;
+	opacity: .5;
+	font-size: 11px;
+	display: block;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+
+/* 
+For Mobile */
+
+@media only screen and (min-width:321px) and (max-width:768px) {
+	header {
+		position: relative;
+	}
+	header .navbar-toggler {
+		background: #ff501a;
+	}
+	header .navbar-toggler-icon {
+		display: block;
+		margin: 6.5px;
+		width: 1.1em;
+		background: #fff;
+		height: 0.1em;
+	}
+	header .menu {
+		float: none;
+	}
+	.banner-sec h1 {
+		font-size: 2em;
+		line-height: 30px;
+	}
+	.banner-sec .content {
+		position: relative;
+		top: 0;
+		transform: translateY(10px);
+		width: 80%;
+	}
+	.banner-sec p {
+		font-size: 12px;
+	}
+	.popular-sec h2 {
+		font-family: sans-serif;
+		color: #fff;
+		font-size: 1.2em;
+	}
+	div#results {
+		padding: 25px 24px;
+	}
+}
